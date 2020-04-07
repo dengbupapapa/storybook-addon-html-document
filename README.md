@@ -15,7 +15,7 @@ npm i --save-dev storybook-addon-html-document
 
 ### Register addon
 
-Create a file called `addons.js` inside the `.storybook` directory and add the
+Create a file called `main.js` inside the `.storybook` directory and add the
 following content:
 
 ```js
@@ -29,11 +29,13 @@ module.exports = {
 
 ## Usage
 
-Add `withHTMLDOC` as a global decorator inside `.storybook/config.js`:
+Add `withHTMLDOC` as a global decorator inside `.storybook/preview.js`:
 
 ```js
 // .storybook/preview.js
-// if you use @storybook/html, import { addDecorator } from '@storybook/html';
+// if you use @storybook/html.
+//import { addDecorator } from '@storybook/html';
+//import { withHTMLDOC } from 'storybook-addon-html-document/html';
 import { addDecorator } from '@storybook/react';
 import { withHTMLDOC } from 'storybook-addon-html-document/react';
 
@@ -45,9 +47,11 @@ The HTML is formatted with Prettier. You can override the Prettier config
 [Prettier API override format](https://prettier.io/docs/en/options.html):
 
 ```js
-// .storybook/config.js
-// if you use @storybook/html, import { addDecorator } from '@storybook/html';
-import { addDecorator } from '@storybook/html';
+// .storybook/preview.js
+// if you use @storybook/html.
+//import { addDecorator } from '@storybook/html';
+//import { withHTMLDOC } from 'storybook-addon-html-document/html';
+import { addDecorator } from '@storybook/react';
 import { withHTML } from 'storybook-addon-html-document/react';
 
 addDecorator(

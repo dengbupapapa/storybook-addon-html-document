@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-html-document",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Storybook addon that extracts and displays compiled syntax-highlighted HTML, and can load html documents.",
   "main": "register.js",
   "scripts": {
