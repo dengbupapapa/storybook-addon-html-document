@@ -14,7 +14,9 @@
   "keywords": [
     "storybook",
     "addons",
-    "html-document"
+    "html-document",
+    "storybook-addon",
+    "data-state"
   ],
   "devDependencies": {
     "@babel/cli": "^7.8.3",
